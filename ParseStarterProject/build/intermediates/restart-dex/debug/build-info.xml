@@ -6,22 +6,22 @@
     density="xhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1505441905737"
+    timestamp="1506176178217"
     token="3185966975581607221"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="314" />
+        duration="7048" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="96" />
+        duration="774" />
     <task
         name="verifier"
-        duration="14" />
+        duration="290" />
 
     <artifact
         location="C:\Users\Newton\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_9.apk"
@@ -29,16 +29,16 @@
 
     <build
         build-mode="FULL"
-        timestamp="1505430632165"
+        timestamp="1506174144827"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="C:\Users\Newton\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
         <artifact
             location="C:\Users\Newton\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Newton\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\dep\dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Newton\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Newton\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_1.apk"
@@ -70,7 +70,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1505441905737"
+        timestamp="1506176178217"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\Newton\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_9.apk"

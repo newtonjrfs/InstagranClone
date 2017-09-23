@@ -33,11 +33,13 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-
       /*
+      //criacao de tabela
       ParseObject pontuacao = new ParseObject("Pontuacao");
-      pontuacao.put("nome","Jose");
-      pontuacao.put("pontos",8950);
+
+      //insercao de dados na tabela
+      pontuacao.put("nome","Alexandre");
+      pontuacao.put("pontos",950);
       pontuacao.saveInBackground(new SaveCallback() {
           @Override
           public void done(ParseException e) {
@@ -50,43 +52,25 @@ public class MainActivity extends AppCompatActivity {
 
           }
       });
-      */
+      
+       */
 
-
-
-      /*
+      //alteracao de dados da tabela
       ParseQuery<ParseObject> consulta = ParseQuery.getQuery("Pontuacao");
       consulta.getInBackground("2VQcmPBk2b", new GetCallback<ParseObject>() {
           @Override
           public void done(ParseObject object, ParseException e) {
               if(e==null){//nao temos erro
-                  object.put("pontos",9999);
+                  object.put("pontos",12545);
                   object.saveInBackground();
               }else{
                   Log.i("salvarPontos","Erro ao consultar objeto");
               }
           }
       });
-       */
 
-      ParseQuery<ParseObject> filtro = ParseQuery.getQuery("Pontuacao");
 
-      filtro.whereGreaterThan("pontos",800);
 
-      filtro.findInBackground(new FindCallback<ParseObject>() {
-          @Override
-          public void done(List<ParseObject> objects, ParseException e) {
-
-              if(e==null){//nao temos erro
-                  for (ParseObject object : objects){
-                      Log.i("listarDados","Objeto - "+ object.get("nome") +" pontuacao : "+ object.get("pontos"));
-                  }
-              }else{
-                  Log.i("listarDados","Erro ao listar objetos - "+ e.getMessage());
-              }
-
-          }
-      });
 
   }
 }
