@@ -21,7 +21,9 @@ import com.parse.ParseAnalytics;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
+import com.parse.ParseUser;
 import com.parse.SaveCallback;
+import com.parse.SignUpCallback;
 
 import java.util.List;
 
@@ -33,87 +35,23 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-      /*
-      //criacao de tabela
-      ParseObject pontuacao = new ParseObject("Pontuacao");
+      //criacao do cadastro
+      ParseUser usuarios = new ParseUser();
+      usuarios.setUsername("newton");
+      usuarios.setPassword("123456");
+      usuarios.setEmail("newtoljunior@hotmail.com");
 
-      //insercao de dados na tabela
-      pontuacao.put("nome","Alexandre");
-      pontuacao.put("pontos",950);
-      pontuacao.saveInBackground(new SaveCallback() {
+      //cadastro
+      usuarios.signUpInBackground(new SignUpCallback() {
           @Override
           public void done(ParseException e) {
-
-              if(e==null){//nao temos erro
-                  Log.i("salvarPontos","Salvo com sucesso");
+              if (e == null){//nao deu erro
+                  Log.i("CadastrarUsuario","Sucesso ao cadastrar usuario");
               }else{
-                  Log.i("salvarPontos","Erro ao salvar pontos");
-              }
-
-          }
-      });
-      
-       */
-
-      /*
-      //alteracao de dados da tabela
-      ParseQuery<ParseObject> consulta = ParseQuery.getQuery("Pontuacao");
-      consulta.getInBackground("2VQcmPBk2b", new GetCallback<ParseObject>() {
-          @Override
-          public void done(ParseObject object, ParseException e) {
-              if(e==null){//nao temos erro
-                  object.put("pontos",12545);
-                  object.saveInBackground();
-              }else{
-                  Log.i("salvarPontos","Erro ao consultar objeto");
+                  Log.i("CadastrarUsuario","Erro ao cadastrar usuario" + e.getMessage());
               }
           }
       });
-       */
-
-      //criacao de filtros para pesquisa
-      ParseQuery<ParseObject> filtro = ParseQuery.getQuery("Pontuacao");
-
-      //quando pesquisar algo maior que
-      //filtro.whereGreaterThan("pontos",0);
-      //quando pesquisar algo maior ou igual que
-      //filtro.whereGreaterThanOrEqualTo("pontos",800);
-      //quando pesquisar algo menor que
-      //filtro.whereLessThan("pontos",800);
-      //quando pesquisar algo menor ou igual que
-      //filtro.whereLessThanOrEqualTo("pontos",9999);
-      //quando pesquisar algo que termina com
-      //filtro.whereEndsWith("nome","a");
-      //quando pesquisar algo que inicia com
-      //filtro.whereStartsWith("nome","J");
-      //ordenar de baixo pra cima
-      //filtro.addAscendingOrder("pontos");
-      //ordenar de cima pra baixo
-      //filtro.addDescendingOrder("pontos");
-      //limitar quantidade de pesquisa
-      //filtro.setLimit(10);
-
-
-
-      //filtro.whereGreaterThanOrEqualTo("pontos",1000);
-      //filtro.addDescendingOrder("pontos");
-
-      filtro.findInBackground(new FindCallback<ParseObject>() {
-          @Override
-          public void done(List<ParseObject> objects, ParseException e) {
-
-              if(e==null){//nao temos erro
-                  for (ParseObject object : objects){
-                      Log.i("listarDados","Objeto - "+ object.get("nome") +" pontuacao : "+ object.get("pontos"));
-                  }
-              }else{
-                  Log.i("listarDados","Erro ao listar objetos - "+ e.getMessage());
-              }
-
-          }
-      });
-
-
 
   }
 }
