@@ -6,22 +6,22 @@
     density="xhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1506356487247"
+    timestamp="1506358713262"
     token="3185966975581607221"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="2097" />
+        duration="317" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="212" />
+        duration="73" />
     <task
         name="verifier"
-        duration="49" />
+        duration="8" />
 
     <artifact
         location="C:\Users\Newton\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_9.apk"
@@ -70,7 +70,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1506356487247"
+        timestamp="1506358713262"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\Newton\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_9.apk"

@@ -17,6 +17,7 @@ import android.view.MenuItem;
 
 import com.parse.FindCallback;
 import com.parse.GetCallback;
+import com.parse.LogInCallback;
 import com.parse.ParseAnalytics;
 import com.parse.ParseException;
 import com.parse.ParseObject;
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
+      /*
       //criacao do cadastro
       ParseUser usuarios = new ParseUser();
       usuarios.setUsername("newton");
@@ -49,6 +51,30 @@ public class MainActivity extends AppCompatActivity {
                   Log.i("CadastrarUsuario","Sucesso ao cadastrar usuario");
               }else{
                   Log.i("CadastrarUsuario","Erro ao cadastrar usuario" + e.getMessage());
+              }
+          }
+      });
+      */
+
+      //validacao se a sessao logada
+      /*
+      if (ParseUser.getCurrentUser() != null){//esta logado
+          Log.i("LoginUsuario","Há sessoes ativas");
+      }else{
+          Log.i("LoginUsuario","Não ha sessoes ativas" + e.getMessage());
+      }
+
+      //deslogar usuario
+      ParseUser.logOut();
+       */
+      //Fazer login do usuario
+      ParseUser.logInInBackground("newton","123456", new LogInCallback() {
+          @Override
+          public void done(ParseUser user, ParseException e) {
+              if (ParseUser.getCurrentUser() != null){//fez login
+                  Log.i("RealizarLogin","Login realizado com sucesso");
+              }else{
+                  Log.i("RealizarLogin","Erro ao fazer login" + e.getMessage());
               }
           }
       });
