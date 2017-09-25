@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
       
        */
 
+      /*
       //alteracao de dados da tabela
       ParseQuery<ParseObject> consulta = ParseQuery.getQuery("Pontuacao");
       consulta.getInBackground("2VQcmPBk2b", new GetCallback<ParseObject>() {
@@ -68,7 +69,49 @@ public class MainActivity extends AppCompatActivity {
               }
           }
       });
+       */
 
+      //criacao de filtros para pesquisa
+      ParseQuery<ParseObject> filtro = ParseQuery.getQuery("Pontuacao");
+
+      //quando pesquisar algo maior que
+      //filtro.whereGreaterThan("pontos",0);
+      //quando pesquisar algo maior ou igual que
+      //filtro.whereGreaterThanOrEqualTo("pontos",800);
+      //quando pesquisar algo menor que
+      //filtro.whereLessThan("pontos",800);
+      //quando pesquisar algo menor ou igual que
+      //filtro.whereLessThanOrEqualTo("pontos",9999);
+      //quando pesquisar algo que termina com
+      //filtro.whereEndsWith("nome","a");
+      //quando pesquisar algo que inicia com
+      //filtro.whereStartsWith("nome","J");
+      //ordenar de baixo pra cima
+      //filtro.addAscendingOrder("pontos");
+      //ordenar de cima pra baixo
+      //filtro.addDescendingOrder("pontos");
+      //limitar quantidade de pesquisa
+      //filtro.setLimit(10);
+
+
+
+      //filtro.whereGreaterThanOrEqualTo("pontos",1000);
+      //filtro.addDescendingOrder("pontos");
+
+      filtro.findInBackground(new FindCallback<ParseObject>() {
+          @Override
+          public void done(List<ParseObject> objects, ParseException e) {
+
+              if(e==null){//nao temos erro
+                  for (ParseObject object : objects){
+                      Log.i("listarDados","Objeto - "+ object.get("nome") +" pontuacao : "+ object.get("pontos"));
+                  }
+              }else{
+                  Log.i("listarDados","Erro ao listar objetos - "+ e.getMessage());
+              }
+
+          }
+      });
 
 
 
