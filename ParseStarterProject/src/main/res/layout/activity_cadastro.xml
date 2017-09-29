@@ -24,7 +24,7 @@
             android:background="@drawable/usuario" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/text_usuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -40,12 +40,12 @@
             android:textColorHint="@android:color/white" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/text_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/editText3"
+            android:layout_below="@+id/text_usuario"
             android:layout_marginTop="25dp"
             android:background="@drawable/fundo_caixa_texto"
             android:ems="10"
@@ -56,12 +56,12 @@
             android:textColorHint="@android:color/white" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/text_senha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/editText4"
+            android:layout_below="@+id/text_email"
             android:layout_marginTop="25dp"
             android:background="@drawable/fundo_caixa_texto"
             android:ems="10"
@@ -72,12 +72,12 @@
             android:textColorHint="@android:color/white" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button_cadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/editText5"
+            android:layout_below="@+id/text_senha"
             android:layout_marginTop="25dp"
             android:text="@string/botao_cadastrar"
             android:background="@drawable/fundo_botao"/>
@@ -86,7 +86,7 @@
             android:id="@+id/cadastrar_conta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/button2"
+            android:layout_below="@+id/button_cadastrar"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="12dp"
             android:text="@string/faca_login" />
