@@ -92,6 +92,10 @@
         "source": "C:\\Users\\Newton\\.android\\build-cache\\8545f462adabe66cec669b05ffe9720b7f8f719a\\output\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
+        "merged": "C:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable\\instagramlogo.png",
+        "source": "C:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\src\\main\\res\\drawable\\instagramlogo.png"
+    },
+    {
         "merged": "C:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
         "source": "C:\\Users\\Newton\\.android\\build-cache\\8545f462adabe66cec669b05ffe9720b7f8f719a\\output\\res\\drawable\\abc_btn_radio_material.xml"
     },

@@ -8,11 +8,14 @@
  */
 package com.parse.starter.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.parse.FindCallback;
@@ -32,53 +35,48 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Toolbar toolbarPrincipal;
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-      /*
-      //criacao do cadastro
-      ParseUser usuarios = new ParseUser();
-      usuarios.setUsername("newton");
-      usuarios.setPassword("123456");
-      usuarios.setEmail("newtoljunior@hotmail.com");
-
-      //cadastro
-      usuarios.signUpInBackground(new SignUpCallback() {
-          @Override
-          public void done(ParseException e) {
-              if (e == null){//nao deu erro
-                  Log.i("CadastrarUsuario","Sucesso ao cadastrar usuario");
-              }else{
-                  Log.i("CadastrarUsuario","Erro ao cadastrar usuario" + e.getMessage());
-              }
-          }
-      });
-      */
-
-      //validacao se a sessao logada
-      /*
-      if (ParseUser.getCurrentUser() != null){//esta logado
-          Log.i("LoginUsuario","Há sessoes ativas");
-      }else{
-          Log.i("LoginUsuario","Não ha sessoes ativas" + e.getMessage());
-      }
-
-      //deslogar usuario
-      ParseUser.logOut();
-       */
-      //Fazer login do usuario
-      ParseUser.logInInBackground("newton","123456", new LogInCallback() {
-          @Override
-          public void done(ParseUser user, ParseException e) {
-              if (ParseUser.getCurrentUser() != null){//fez login
-                  Log.i("RealizarLogin","Login realizado com sucesso");
-              }else{
-                  Log.i("RealizarLogin","Erro ao fazer login" + e.getMessage());
-              }
-          }
-      });
+      toolbarPrincipal = (Toolbar) findViewById(R.id.toolbar_principal);
+      toolbarPrincipal.setLogo(R.drawable.instagramlogo);
+      setSupportActionBar(toolbarPrincipal);
 
   }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()){
+
+            case R.id.action_sair:
+                deslogarUsuario();
+                return true;
+            case R.id.action_configuracoes:
+                return true;
+            case R.id.action_compartilhar:
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+
+        }
+    }
+
+    private void deslogarUsuario(){
+        ParseUser.logOut();
+        Intent intent = new Intent(this,LoginActivity.class);
+        startActivity(intent);
+    }
 }
