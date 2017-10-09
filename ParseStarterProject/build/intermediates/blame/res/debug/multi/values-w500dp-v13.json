@@ -11,7 +11,31 @@
                     "endOffset": 105
                 },
                 "from": {
-                    "file": "C:\\Users\\Newton\\.android\\build-cache\\8545f462adabe66cec669b05ffe9720b7f8f719a\\output\\res\\values-w500dp\\values-w500dp.xml",
+                    "file": "C:\\Users\\Newton\\.android\\build-cache\\02c4c0f6dea4dbe57c1aad35527140ccc75daa50\\output\\res\\values-w500dp\\values-w500dp.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 294,
+                        "endColumn": 54,
+                        "endOffset": 344
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "C:\\Users\\SAA PC\\Desktop\\Instagram\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\values-w500dp-v13\\values-w500dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 54,
+                    "endOffset": 105
+                },
+                "from": {
+                    "file": "C:\\Users\\SAA PC\\Desktop\\Instagram\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-w500dp\\values-w500dp.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

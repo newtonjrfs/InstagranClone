@@ -1,19 +1,19 @@
-#Thu Sep 14 19:48:19 BRT 2017
-renamed.5=classes2.dex
-renamed.4=classes6.dex
+#Thu Oct 05 23:03:42 BRT 2017
+renamed.5=classes4.dex
+renamed.4=classes2.dex
 renamed.3=classes3.dex
 renamed.2=classes5.dex
-renamed.1=classes4.dex
-renamed.0=classes.dex
-base.5=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_208983283f4e4adf5f8899ae9e18b30f42d32f37
-base.4=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-22.2.0_e4339b6f8b868dcdd1c640a16c041864b13400e2
-base.3=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_7ea0c16eea7a88224a78570434d3c1e5682b48f1
+renamed.1=classes.dex
+renamed.0=classes6.dex
+base.5=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\internal_impl-23.0.0_a4985d2932ef02e515b064de497320e63b787154
+base.4=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_af0e6bc9c12cff673f3c0097e56460d5d1936565
+base.3=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_c0999c08b06dc9624eddec7ed849d8e124fdd983
 base.2=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\parse-android-1.13.0_bf97552a87f86134a183bca262b8379260b1f289
-base.1=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\internal_impl-22.2.0_e8903a82b2291ac938023509274fb37a2e7d0d4b
-base.0=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\bolts-tasks-1.4.0_74c31264ad2f5ec9473dfe3f6a0c75e8efdf30e9
-file.5=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_208983283f4e4adf5f8899ae9e18b30f42d32f37\\classes.dex
-file.4=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-22.2.0_e4339b6f8b868dcdd1c640a16c041864b13400e2\\classes.dex
-file.3=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_7ea0c16eea7a88224a78570434d3c1e5682b48f1\\classes.dex
+base.1=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\bolts-tasks-1.4.0_74c31264ad2f5ec9473dfe3f6a0c75e8efdf30e9
+base.0=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-23.0.0_92bc7a4901962f80a620c211304ff7ab4a6ae271
+file.5=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\internal_impl-23.0.0_a4985d2932ef02e515b064de497320e63b787154\\classes.dex
+file.4=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_af0e6bc9c12cff673f3c0097e56460d5d1936565\\classes.dex
+file.3=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_c0999c08b06dc9624eddec7ed849d8e124fdd983\\classes.dex
 file.2=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\parse-android-1.13.0_bf97552a87f86134a183bca262b8379260b1f289\\classes.dex
-file.1=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\internal_impl-22.2.0_e8903a82b2291ac938023509274fb37a2e7d0d4b\\classes.dex
-file.0=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\bolts-tasks-1.4.0_74c31264ad2f5ec9473dfe3f6a0c75e8efdf30e9\\classes.dex
+file.1=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\bolts-tasks-1.4.0_74c31264ad2f5ec9473dfe3f6a0c75e8efdf30e9\\classes.dex
+file.0=C\:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-23.0.0_92bc7a4901962f80a620c211304ff7ab4a6ae271\\classes.dex

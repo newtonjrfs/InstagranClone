@@ -26,4 +26,5 @@
         android:icon="@drawable/ic_action_camera"
         android:orderInCategory="300"
         app:showAsAction="ifRoom"/>
+
 </menu>

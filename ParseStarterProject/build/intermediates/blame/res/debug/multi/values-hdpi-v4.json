@@ -1,5 +1,31 @@
 [
     {
+        "outputFile": "C:\\Users\\SAA PC\\Desktop\\Instagram\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\values-hdpi-v4\\values-hdpi-v4.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 6,
+                    "endColumn": 13,
+                    "endOffset": 325
+                },
+                "from": {
+                    "file": "C:\\Users\\SAA PC\\Desktop\\Instagram\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-hdpi\\values-hdpi.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 297,
+                        "endLine": 8,
+                        "endColumn": 13,
+                        "endOffset": 567
+                    }
+                }
+            }
+        ]
+    },
+    {
         "outputFile": "C:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
         "map": [
             {
@@ -12,7 +38,7 @@
                     "endOffset": 325
                 },
                 "from": {
-                    "file": "C:\\Users\\Newton\\.android\\build-cache\\8545f462adabe66cec669b05ffe9720b7f8f719a\\output\\res\\values-hdpi\\values-hdpi.xml",
+                    "file": "C:\\Users\\Newton\\.android\\build-cache\\02c4c0f6dea4dbe57c1aad35527140ccc75daa50\\output\\res\\values-hdpi\\values-hdpi.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

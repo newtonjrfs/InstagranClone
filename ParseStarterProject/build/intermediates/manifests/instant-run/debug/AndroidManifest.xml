@@ -41,10 +41,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.parse.starter.activity.MainActivity" >
-        </activity>
-        <activity android:name="com.parse.starter.activity.CadastroActivity" >
-        </activity>
+        <activity android:name="com.parse.starter.activity.MainActivity" />
+        <activity android:name="com.parse.starter.activity.CadastroActivity" />
 
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"
