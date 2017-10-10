@@ -12,6 +12,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Newton\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f99f5746c86f4d028dbe9d96e4854b8f254e905e">
+        <dex dex="C:\Users\Newton\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_b59325223855046f027fab7a5200a1e966c37de9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Newton\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
         jumboMode="true"
         optimize="true"
@@ -27,15 +36,6 @@
         revision="25.0.0"
         sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
         <dex dex="C:\Users\Newton\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_af0e6bc9c12cff673f3c0097e56460d5d1936565\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Newton\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="fd45901f2e32244be6e8b762561d2f6f32be7187">
-        <dex dex="C:\Users\Newton\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_b59325223855046f027fab7a5200a1e966c37de9\classes.dex" />
     </item>
     <item
         is-multidex="true"
