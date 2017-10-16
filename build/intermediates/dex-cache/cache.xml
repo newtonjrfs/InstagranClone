@@ -3,12 +3,30 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\Newton\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\Newton\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_e234879371671e263f517677036cba36163d9c7d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Newton\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="3e9b99a2a85019253ccc50f8cf0d31ac575d7b05">
+        sha1="a58ece5f4eba0690acb7a3e0bf99516caaa96ca4">
         <dex dex="C:\Users\Newton\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_b59325223855046f027fab7a5200a1e966c37de9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Newton\.android\build-cache\b18db562b08ff1a8b6cc6b7e3b00e8268e8f09e3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="C:\Users\Newton\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_979c862202f1f4651a28eafd845985810e8f78f4\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -18,6 +36,15 @@
         revision="25.0.0"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="C:\Users\Newton\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_960bfd88ef15ff8bdd0a60b344d786e9c4cac34b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Newton\.android\build-cache\6a5fc04b52d1ad217505badfe2fd39c295db1449\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\Newton\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2bab4ea2e3eb00cab2776f66ecd75911217cb806\classes.dex" />
     </item>
 
 </items>

@@ -5,9 +5,11 @@
     tools:context="com.parse.starter.fragments.UsuariosFragment">
 
     <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/list_usuarios"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:divider="@color/cinzaEscuro"
-        android:dividerHeight="1dp" />
+        android:divider="@color/cinza"
+        android:dividerHeight="1dp"
+        android:layout_gravity="center_horizontal|top" />
+
 </FrameLayout>

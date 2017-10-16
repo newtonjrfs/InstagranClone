@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_instagram.png",
+        "source": "C:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\src\\main\\res\\mipmap-mdpi\\ic_instagram.png"
+    },
+    {
         "merged": "C:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
         "source": "C:\\Users\\Newton\\AndroidStudioProjects\\Parse-Projeto-1.13.0\\ParseStarterProject\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     }

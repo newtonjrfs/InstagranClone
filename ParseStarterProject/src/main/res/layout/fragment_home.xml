@@ -5,11 +5,9 @@
     tools:context="com.parse.starter.fragments.HomeFragment">
 
     <ListView
-        android:id="@+id/list_postagens_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|top"
-        android:divider="@color/cinzaEscuro"
-        android:dividerHeight="5dp" />
+        android:id="@+id/list_postagens_home"
+        android:layout_gravity="center_horizontal|top" />
 
 </FrameLayout>
