@@ -33,10 +33,10 @@ public class StarterApplication extends Application {
             .applicationId("jwvgQJmlePCyQOUDNyHBPeOcMvrzFTCAvqXDgv8N")
             .clientKey("Si6CmXPsJwTUs8Lf3dhy3fQpigPfNC1gNLcwm6Kq")
             .server("https://parseapi.back4app.com/")
-    .build()
+            .build()
     );
 
-      //ParseUser.enableAutomaticUser();
+    //ParseUser.enableAutomaticUser();
     ParseACL defaultACL = new ParseACL();
     // Optionally enable public read access.
     defaultACL.setPublicReadAccess(true);

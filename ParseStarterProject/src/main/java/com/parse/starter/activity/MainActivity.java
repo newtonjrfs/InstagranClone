@@ -37,6 +37,7 @@ import com.parse.SaveCallback;
 import com.parse.SignUpCallback;
 import com.parse.starter.R;
 import com.parse.starter.adapter.TabsAdapter;
+import com.parse.starter.fragments.HomeFragment;
 import com.parse.starter.util.SlidingTabLayout;
 
 import java.io.ByteArrayOutputStream;
@@ -104,51 +105,60 @@ public class MainActivity extends AppCompatActivity {
   }
 
   private void compartilharFoto(){
-    Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-    startActivityForResult(intent,1);
+
+    Intent intent = new Intent( Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+    startActivityForResult(intent, 1);
+
   }
 
   @Override
   protected void onActivityResult(int requestCode, int resultCode, Intent data) {
     super.onActivityResult(requestCode, resultCode, data);
-    //teste de retorno de dados
-    if(requestCode == 1 && resultCode == RESULT_OK && data != null){
 
-      //recuperar a imagem
+    //Testar processo de retorno dos dados
+    if( requestCode==1 && resultCode == RESULT_OK && data != null ){
+
+      //recuperar local do recurso
       Uri localImagemSelecionada = data.getData();
 
-      //recuperar a imagem do local onde foi selecionada
+      //recupera a imagem do local que foi selecionada
       try {
-        Bitmap imagem = MediaStore.Images.Media.getBitmap(getContentResolver(), localImagemSelecionada);
+        Bitmap imagem = MediaStore.Images.Media.getBitmap( getContentResolver(), localImagemSelecionada );
 
-        //mandar pra png
+        //comprimir no formato PNG
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        imagem.compress(Bitmap.CompressFormat.PNG,50,stream);
+        imagem.compress(Bitmap.CompressFormat.PNG, 75, stream);
+        //Cria um array de bytes da imagem
+        byte[] byteArray = stream.toByteArray();
 
-        //Criando um array de byte de imagem
-        byte[] byteArrey = stream.toByteArray();
-
-        //criar tipo que o Parse aceita
+        //Criar um arquivo com formato próprio do parse
         SimpleDateFormat dateFormat = new SimpleDateFormat("ddmmaaaahhmmss");
-        String nomeImagem = dateFormat.format( new Date());
-        ParseFile arquivoParse = new ParseFile(nomeImagem + "imagem.png", byteArrey);
+        String nomeImagem = dateFormat.format( new Date() );
+        ParseFile arquivoParse = new ParseFile(nomeImagem +"imagem.png", byteArray);
 
-        //monta pra manda pro parse
+        //Monta objeto para salvar no parse
         ParseObject parseObject = new ParseObject("Imagem");
-        parseObject.put("username",ParseUser.getCurrentUser().getUsername());
-        parseObject.put("imagem", arquivoParse);
+        parseObject.put("username", ParseUser.getCurrentUser().getUsername() );
+        parseObject.put("imagem", arquivoParse );
 
         //salvar os dados
         parseObject.saveInBackground(new SaveCallback() {
           @Override
           public void done(ParseException e) {
-            if(e == null){
-              Toast.makeText(getApplicationContext(), "Salvo com sucesso", Toast.LENGTH_LONG).show();
+
+            if( e==null ){//sucesso
+              Toast.makeText(getApplicationContext(), "Sua imagem foi postada!!!", Toast.LENGTH_LONG ).show();
+
+              //Atualizar a listagem de itens do Fragmento HomeFragment
+              TabsAdapter adapterNovo = (TabsAdapter) viewPager.getAdapter();
+              HomeFragment homeFragmentNovo = (HomeFragment) adapterNovo.getFragment( 0 );
+              homeFragmentNovo.atualizaPostagens();
+
+            }else{//erro
+              Toast.makeText(getApplicationContext(), "Erro ao postar sua imagem - Tente novamente!",
+                      Toast.LENGTH_LONG ).show();
             }
-            else
-            {
-              Toast.makeText(getApplicationContext(), "Erro ao postar imagem", Toast.LENGTH_LONG).show();
-            }
+
           }
         });
 
@@ -157,6 +167,7 @@ public class MainActivity extends AppCompatActivity {
       }
 
     }
+
   }
 
   private void deslogarUsuario(){
